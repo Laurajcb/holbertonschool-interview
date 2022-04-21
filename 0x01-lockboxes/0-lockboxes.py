@@ -5,18 +5,18 @@ Method that determines if all the boxes can be opened
 
 
 def canUnlockAll(boxes):
-    """ 
+    """
     Returns ture or false if all the boxes can be unlocked
     """
 
     unlocked = []
     keys = []
-    
-    for i in boxes:    
+
+    for i in boxes:
         unlocked.append(0)
-    
+
     if len(boxes) > 0:
-        unlocked[0] = 1    
+        unlocked[0] = 1
         keys.append(0)
 
     while keys:
