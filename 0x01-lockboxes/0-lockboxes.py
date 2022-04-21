@@ -1,9 +1,13 @@
 #!/usr/bin/python3
-""" Method that determines if all the boxes can be opened """
+""" 
+Method that determines if all the boxes can be opened
+"""
 
 
 def canUnlockAll(boxes):
-    """Returns ture or false if all the boxes can be unlocked"""
+    """ 
+    Returns ture or false if all the boxes can be unlocked
+    """
 
     unlocked = []
     keys = []
