@@ -17,17 +17,18 @@ def canUnlockAll(boxes):
     keys = []
     for i in boxes:
         unlocked.append(0)
-    if len(boxes) > 0:
-        unlocked[0] = 1
-        keys.append(0)
+
+    unlocked[0] = 1
+    keys.append(0)
     while keys:
         key = keys.pop(0)
         new_keys = boxes[key]
         unlocked[key] = 1
         for new_key in new_keys:
-            if int(new_key) < len(unlocked) and unlocked[new_key] == 0:
+            if int(new_key) < len(boxes) and unlocked[new_key] == 0:
                 keys.append(new_key)
-    for unlock in unlocked:
-        if unlock != 1:
-            return False
+
+    if 0 in unlocked:
+        return False
+
     return True
