@@ -10,6 +10,9 @@ def canUnlockAll(boxes):
     Returns ture or false if all the boxes can be unlocked
     """
 
+    if boxes is None or len(boxes) == 0:
+        return False
+
     unlocked = []
     keys = []
     for i in boxes:
