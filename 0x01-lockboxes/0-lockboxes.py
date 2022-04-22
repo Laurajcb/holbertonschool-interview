@@ -22,7 +22,7 @@ def canUnlockAll(boxes):
         new_keys = boxes[key]
         unlocked[key] = 1
         for new_key in new_keys:
-            if new_key < len(unlocked) and unlocked[new_key] == 0:
+            if int(new_key) < len(unlocked) and unlocked[new_key] == 0:
                 keys.append(new_key)
     for unlock in unlocked:
         if unlock != 1:
