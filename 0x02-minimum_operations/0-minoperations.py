@@ -9,9 +9,8 @@ the fewest number of operations needed to result in exactly n H characters in th
 def minOperations(n):
     """
     Returns an integer, If n is impossible to achieve
-    else return 0
+    Else return 0
     """
-
     result = 0
     i = 2
 
