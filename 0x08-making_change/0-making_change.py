@@ -16,7 +16,7 @@ def makeChange(coins: list, total: int) -> int:
         - You can assume you have an infinite number of each denomination
         of coin in the list
     """
-    if total <= 0:
+    if total < 0:
         return 0
 
     change = 0
