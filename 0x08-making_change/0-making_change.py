@@ -4,7 +4,7 @@ Making Change Function
 """
 
 
-def makeChange(coins, total):
+def makeChange(coins: list, total: int) -> int:
     """
     Given a pile of coins of different values, determine the fewest
     number of coins needed to meet a given amount total.
