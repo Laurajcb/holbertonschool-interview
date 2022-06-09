@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Making Change
+Making Change Function
 """
 
 
@@ -11,10 +11,10 @@ def makeChange(coins, total):
     Returns: fewest number of coins needed to meet total
         - If total is 0 or < 0, return 0
         - If total cannot be met by any number of coins you have, return -1
-        - Coins is a list of the values of the coins in your possession
+        - Coins is a list of the values of the coins
         - The value of a coin will always be an integer greater than 0
-        - You can assume you have an infinite number of each denomination of
-        coin in the list
+        - You can assume you have an infinite number of each denomination
+        of coin in the list
     """
     if total < 1:
         return 0
